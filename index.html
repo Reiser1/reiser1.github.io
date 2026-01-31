@@ -145,18 +145,14 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 
-<!-- Sidebar toggle override (NO URL HASH CHANGE) -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const sidebar = document.getElementById("sidebar");
     const toggles = document.querySelectorAll(".toggle");
-
-    if (!sidebar) return;
 
     toggles.forEach(toggle => {
       toggle.addEventListener("click", function (e) {
-        e.preventDefault();          // stop #sidebar in URL
-        sidebar.classList.toggle("inactive");
+        e.preventDefault();
+        document.body.classList.toggle("is-menu-visible");
       });
     });
   });
