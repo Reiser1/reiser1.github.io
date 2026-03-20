@@ -3290,3 +3290,19 @@ input, select, textarea {
 			margin-top: 0;
 			padding-top: 0;
 		}
+
+/* === Experience Logos === */
+.features article {
+  align-items: flex-start; /* override center alignment */
+}
+
+.features article .logo {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.features article .logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
