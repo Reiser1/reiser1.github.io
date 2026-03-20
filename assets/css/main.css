@@ -3307,6 +3307,6 @@ input, select, textarea {
   object-fit: contain;
 }
 
-.features article .logo img[src*="helper_logo"] {
-  transform: scale(1.5);
+.features article .logo img {
+  object-fit: cover;
 }
